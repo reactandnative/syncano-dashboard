@@ -49,7 +49,7 @@ class DemoAppListItem extends Component {
   render() {
     const { item, handleOpenDemoApp } = this.props;
     const styles = this.getStyles();
-    const appImageSrc = `/img/demoapps/${item.name}.jpg`;
+    const appImageSrc = () => `/img/demoapps/${item.name}.jpg`;
     const truncatedDesc = _.truncate(item.description, { length: 100 });
 
     return (
@@ -61,7 +61,7 @@ class DemoAppListItem extends Component {
           {item.metadata.appTitle}
         </div>
         <img
-          src={appImageSrc}
+          src={appImageSrc()}
           alt="demo app"
           style={styles.demoAppImage}
         />

@@ -166,7 +166,7 @@ const DemoApp = React.createClass({
   renderDescContainer() {
     const styles = this.getStyles();
     const { appName, appTitle, appDesc, appGithubSrc, appTutorialSrc, feedback } = this.state;
-    const appImageSrc = `/img/demoapps/${appName}.jpg`;
+    const appImageSrc = () => `/img/demoapps/${appName}.jpg`;
 
     return (
       <div style={styles.descContainer}>
@@ -177,7 +177,7 @@ const DemoApp = React.createClass({
         <div style={styles.appDescContainer}>
           <div style={styles.appImage}>
             <img
-              src={appImageSrc}
+              src={appImageSrc()}
               alt="demo app"
               style={styles.appImage}
             />
