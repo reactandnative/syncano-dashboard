@@ -113,7 +113,7 @@
     "http-server": "0.9.0",
     "jest-cli": "17.0.0",
     "nightwatch": "0.9.8",
-    "node-libs-browser": ">=0.5.3",
+    "node-libs-browser": ">=1.0.0",
     "node-sass": "3.11.2",
     "raw-loader": "0.5.1",
     "react-prism": "4.0.0",
