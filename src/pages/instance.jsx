@@ -62,29 +62,6 @@ const Instance = React.createClass({
                   iconClassName="synicon-layers"
                   primaryText="Data Classes"
                 />
-                {/*
-                <Sidebar.LinkListItem
-                  key="Snippets"
-                  routeName="snippets"
-                  data-e2e="left-sidebar-snippets"
-                  primaryText="Snippets"
-                  iconClassName="synicon-code-tags"
-                  initiallyOpen={true}
-                  autoGenerateNestedIndicator={false}
-                  nestedItems={[
-                    <Sidebar.NestedLinkListItem
-                      key="scripts"
-                      routeName="scripts"
-                      primaryText="Scripts"
-                    />,
-                    <Sidebar.NestedLinkListItem
-                      key="templates"
-                      routeName="templates"
-                      primaryText="Templates"
-                    />
-                  ]}
-                />
-                */}
                 <Sidebar.LinkListItem
                   key="Hosting"
                   routeName="hosting"
